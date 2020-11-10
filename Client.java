@@ -41,6 +41,7 @@ public class Client {
             DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
             CauHoi CH = new CauHoi();
             String strTN = dis.readUTF();
+            System.out.println(strTN);
             String[] arrStr = strTN.split("///");
             List<CauHoi> listCH = new ArrayList<CauHoi>();
             int i = 0;
